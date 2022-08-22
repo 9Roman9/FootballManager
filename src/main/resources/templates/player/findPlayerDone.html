@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>FootballManager</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" th:href="@{/style.css}">
+</head>
+<body>
+<div>
+    <p>Знайдений наступний гравець:</p><br>
+    <p>Ім'я: <span th:text="${firstName}"></span></p><br>
+    <p>Прізвище: <span th:text="${lastName}"></span></p><br>
+    <p>Вік: <span th:text="${age}"></span></p><br>
+    <p>Досвід (у місяцях): <span th:text="${experience}"></span></p><br>
+    <p>Команда: <span th:text="${commandName}"></span></p><br><br>
+    <form action="findPlayer">
+        <button type="submit">Знайти ще гравця</button>
+    </form>
+    <form action="main">
+        <button type="submit">Повернутися до головного меню</button>
+    </form>
+</div>
+</body>
+</html>

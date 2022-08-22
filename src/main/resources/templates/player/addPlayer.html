@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>FootballManager</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" th:href="@{/style.css}">
+</head>
+<body>
+<div>
+    <p>Введіть наступні дані:</p><br>
+    <form action="addPlayerDone" method="post">
+        <p>Ім'я гравця:</p>
+        <input name="firstName"><br><br>
+        <p>Прізвище гравця:</p>
+        <input name="lastName"><br><br>
+        <p>Вік гравця:</p>
+        <input name="age"><br><br>
+        <p>Досвід гравця:</p>
+        <input name="experience"><br><br>
+        <p>Команда, в якій буде грати:</p>
+        <input name="commandName"><br><br><br>
+        <button type="submit">Підтвердити</button>
+    </form>
+</div>
+</body>
+</html>

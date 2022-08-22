@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>FootballManager</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" th:href="@{/style.css}">
+</head>
+<body>
+<div>
+    <p>Введіть наступні дані:</p><br>
+    <form action="transferDone" method="post">
+        <p>Номер гравця:</p>
+        <input name="idPlayer"><br><br>
+        <p>Назва команди-покупця:</p>
+        <input name="nameCommand"><br><br><br>
+        <button type="submit">Підтвердити</button>
+    </form>
+</div>
+</body>
+</html>

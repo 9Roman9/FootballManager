@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>FootballManager</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" th:href="@{/style.css}">
+</head>
+<body>
+    <div>
+        <p>Команди з такою назвою не існує. Повторіть спробу.</p><br>
+        <form action="addPlayer">
+            <button type="submit">Повторити спробу</button>
+        </form><br>
+        <form action="main">
+            <button type="submit">Головне меню</button>
+        </form>
+    </div>
+</body>
+</html>

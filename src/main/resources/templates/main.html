@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>FootballManager</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" th:href="@{/style.css}">
+</head>
+<body>
+    <div>
+        <p>Оберіть, яку операцію Ви хочете здійснити:</p><br>
+        <form action="addPlayer">
+            <button type="submit">Додати гравця</button>
+        </form><br>
+        <form action="findPlayer">
+            <button type="submit">Знайти гравця</button>
+        </form><br>
+        <form action="updatePlayer">
+            <button type="submit">Змінити дані гравця</button>
+        </form><br>
+        <form action="deletePlayer">
+            <button type="submit">Видалити гравця</button>
+        </form><br>
+        <form action="addCommand">
+            <button type="submit">Додати команду</button>
+        </form><br>
+        <form action="findCommand">
+            <button type="submit">Знайти команду</button>
+        </form><br>
+        <form action="updateCommand">
+            <button type="submit">Змінити дані команди</button>
+        </form><br>
+        <form action="deleteCommand">
+            <button type="submit">Видалити команду</button>
+        </form><br>
+        <form action="transfer">
+            <button type="submit">Здійснити трансфер гравця</button>
+        </form><br>
+        <form action="exit">
+            <button type="submit">Вийти</button>
+        </form>
+    </div>
+</body>
+</html>
